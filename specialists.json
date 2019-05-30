@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Name Surname",
+        "photoURL": "https://via.placeholder.com/120",
+        "location": "Location, Country",
+        "company": "COMPANY",
+        "devices": [ "DEVICE", "DEVICE" ],
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "lnURL": "https://linked.in",
+        "twitterURL": "https://twitter.com"
+    },
+    {
+        "name": "Name Surname",
+        "photoURL": "https://via.placeholder.com/120",
+        "location": "Location, Country",
+        "company": "COMPANY",
+        "devices": [ "DEVICE", "DEVICE" ],
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "lnURL": "https://linked.in",
+        "twitterURL": "https://twitter.com"
+    },
+    {
+        "name": "Name Surname",
+        "photoURL": "https://via.placeholder.com/120",
+        "location": "Location, Country",
+        "company": "COMPANY",
+        "devices": [ "DEVICE", "DEVICE" ],
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "lnURL": "https://linked.in",
+        "twitterURL": "https://twitter.com"
+    }
+]

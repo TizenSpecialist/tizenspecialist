@@ -95,13 +95,13 @@
         .specialist-description:not(.cloned) {
             position: relative;
             right: 0;
-            opacity: 1;
             transition: right .5s ease, opacity .5s ease;
         }
 
         .specialist-description.cloned {
             position: absolute;
             left: 100%;
+            opacity: 0;
             top: 10px;
             width: 160px;
             transition: left .5s ease, opacity .5s ease;
@@ -176,7 +176,8 @@
             position: absolute;
             left: 25px;
             bottom: -60%;
-            transition: left .5s ease, bottom .5s ease;
+            opacity: 0;
+            transition: left .5s ease, bottom .5s ease, opacity .5s ease;
             padding-right: 25px;
         }
 
@@ -274,52 +275,48 @@
         (function() {
             'use strict';
 
-            function bindEvents() {
-                [].forEach.call(document.querySelectorAll('.specialist'), function (element, i) {
-                    var clone = element.querySelector('.specialist-description').cloneNode(true);
-
-                    clone.classList.add('cloned');
-
-                    element.querySelector('section').appendChild(clone);
-                    element.addEventListener('click', handleSpecialistClick);
-                });
-            }
-
             function buildList(data) {
                 var template = document.getElementById('specialist-template'),
                     target = document.querySelector('.specia-list');
 
-                data.forEach(function(specialist) {
-                    var clone = 'content' in document.createElement('template') ?
+                data.forEach(function(specialist, index) {
+                    var listItem = 'content' in document.createElement('template') ?
                                     document.importNode(template.content, true) :
-                                    document.querySelector('#specialist-template li').cloneNode(true);
+                                    document.querySelector('#specialist-template li').cloneNode(true),
+                        clone;
 
-                    clone.querySelector('.specialist-photo').setAttribute('src', specialist.photoURL)
+                    listItem.querySelector('.specialist-photo').setAttribute('src', specialist.photoURL)
 
-                    clone.querySelector('h1').textContent = specialist.name;
-                    clone.querySelector('address').textContent = specialist.location;
-                    clone.querySelector('.company').textContent = specialist.company;
-                    clone.querySelector('.devices').textContent = specialist.devices;
-                    clone.querySelector('.bio-text').textContent = specialist.bio;
+                    listItem.querySelector('h1').textContent = specialist.name;
+                    listItem.querySelector('address').textContent = specialist.location;
+                    listItem.querySelector('.company').textContent = specialist.company;
+                    listItem.querySelector('.devices').textContent = specialist.devices;
+                    listItem.querySelector('.bio-text').textContent = specialist.bio;
 
                     if (specialist.twitterURL) {
-                        clone.querySelector('.twitter-link').setAttribute('href', specialist.twitterURL);
+                        listItem.querySelector('.twitter-link').setAttribute('href', specialist.twitterURL);
                     }
 
                     if (specialist.lnURL) {
-                        clone.querySelector('.li-link').setAttribute('href', specialist.lnURL);
+                        listItem.querySelector('.li-link').setAttribute('href', specialist.lnURL);
                     }
 
-                    target.appendChild(clone);
-                });
+                    clone = listItem.querySelector('.specialist-description').cloneNode(true);
+                    clone.classList.add('cloned');
 
-                bindEvents();
+                    listItem.querySelector('section').appendChild(clone);
+
+                    target.appendChild(listItem);
+                    target.querySelectorAll('.specialist')[index].addEventListener('click', handleSpecialistClick)
+                });
             }
 
             function handleLoad(data) {
-                var specialists = JSON.parse(data.target.response);
+                try {
+                    var specialists = JSON.parse(data.target.response);
 
-                buildList(specialists);
+                    buildList(specialists);
+                } catch (ignore) {}
             }
 
             function handleSpecialistClick(event) {

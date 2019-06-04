@@ -1,6 +1,6 @@
 [
     {
-        "name": "Name Surname",
+        "name": "1 Name Surname",
         "photoURL": "https://via.placeholder.com/120",
         "location": "Location, Country",
         "company": "COMPANY",
@@ -10,7 +10,7 @@
         "twitterURL": "https://twitter.com"
     },
     {
-        "name": "Name Surname",
+        "name": "2 Name Surname",
         "photoURL": "https://via.placeholder.com/120",
         "location": "Location, Country",
         "company": "COMPANY",
@@ -20,7 +20,7 @@
         "twitterURL": "https://twitter.com"
     },
     {
-        "name": "Name Surname",
+        "name": "3 Name Surname",
         "photoURL": "https://via.placeholder.com/120",
         "location": "Location, Country",
         "company": "COMPANY",

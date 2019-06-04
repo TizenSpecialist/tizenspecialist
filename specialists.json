@@ -1,6 +1,6 @@
 [
     {
-        "name": "1 Name Surname",
+        "name": "Bang",
         "photoURL": "https://via.placeholder.com/120",
         "location": "Korea, Seoul",
         "company": "COMPANY",
@@ -12,7 +12,7 @@
         "emailURL": "test@test.com"
     },
     {
-        "name": "2 Name Surname",
+        "name": "Ahn",
         "photoURL": "https://via.placeholder.com/120",
         "location": "Location, Country",
         "company": "COMPANY",
@@ -24,7 +24,7 @@
         "emailURL": "https://twitter.com"
     },
     {
-        "name": "3 Name Surname",
+        "name": "Nam",
         "photoURL": "https://via.placeholder.com/120",
         "location": "Location, Country",
         "company": "COMPANY",

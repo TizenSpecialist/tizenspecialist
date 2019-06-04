@@ -171,9 +171,9 @@
             text-align: justify;
             position: absolute;
             left: 20px;
-            bottom: -60%;
+            top: 100%;
             opacity: 0;
-            transition: left .5s ease, bottom .5s ease, opacity .5s ease;
+            transition: left .5s ease, top .5s ease, opacity .5s ease;
             padding-right: 20px;
         }
 
@@ -185,12 +185,18 @@
             margin: 0;
         }
 
-        .bio .sociall-links {
-            width: auto;
-            text-align: right;
+        .sociall-links {
             margin-top: 25px;
             display: flex;
             justify-content: flex-end;
+            position: absolute;
+            width: 100%;
+            bottom: -24px;
+            left: 0;
+            padding: 0 20px;
+            margin: 0;
+            opacity: 0;
+            transition: bottom .5s ease, opacity .5s ease;
         }
 
         .sociall-links img {
@@ -243,9 +249,15 @@
         }
 
         .active .bio {
+            top: 175px;
+            opacity: 1;
+        }
+
+        .active .sociall-links {
             bottom: 12px;
             opacity: 1;
         }
+
     </style>
 </head>
 <body>
@@ -270,11 +282,11 @@
                 <div class="bio">
                     <p class="bio-header">About</p>
                     <span class="bio-text"></span>
-                    <p class="sociall-links">
-                        <a class="twitter-link" rel="noopener norefferer"><img src="icons/twitter.svg" /></a>
-                        <a class="li-link" rel="noopener norefferer"><img src="icons/ln.png" /></a>
-                    </p>
                 </div>
+                <p class="sociall-links">
+                    <a class="twitter-link" rel="noopener norefferer"><img src="icons/twitter.svg" /></a>
+                    <a class="li-link" rel="noopener norefferer"><img src="icons/ln.png" /></a>
+                </p>
             </section>
         </li>
     </template>

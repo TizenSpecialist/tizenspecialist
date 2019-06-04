@@ -46,14 +46,6 @@
 
         ul, li {list-style: none; padding:0;}
 
-        a {
-            display: none;
-        }
-
-        a[href] {
-            display: inline;
-        }
-
         header {
             text-align: center;
             height: 310px;
@@ -95,16 +87,20 @@
         .specialist-description:not(.cloned) {
             position: relative;
             right: 0;
-            opacity: 1;
             transition: right .5s ease, opacity .5s ease;
         }
 
         .specialist-description.cloned {
             position: absolute;
             left: 100%;
+            opacity: 0;
             top: 10px;
             width: 160px;
             transition: left .5s ease, opacity .5s ease;
+        }
+
+        .specialist-description.cloned h1 {
+            margin-bottom: 2px;
         }
 
         .specialist h1 {
@@ -174,10 +170,11 @@
             line-height: 18px;
             text-align: justify;
             position: absolute;
-            left: 25px;
+            left: 20px;
             bottom: -60%;
-            transition: left .5s ease, bottom .5s ease;
-            padding-right: 25px;
+            opacity: 0;
+            transition: left .5s ease, bottom .5s ease, opacity .5s ease;
+            padding-right: 20px;
         }
 
         .bio .bio-header {
@@ -189,15 +186,27 @@
         }
 
         .bio .sociall-links {
+            width: auto;
             text-align: right;
             margin-top: 25px;
+            display: flex;
+            justify-content: flex-end;
         }
 
         .sociall-links img {
-            width: 26px;
-            height: 26px;
+            width: 21px;
+            height: 21px;
             background: #fff;
             border-radius: 1px;
+            display: block;
+        }
+
+        .sociall-links a {
+            margin-left: 5px;
+        }
+
+        .sociall-links img:hover {
+            transform: translateY(-1px);
         }
 
         @media (min-width: 876px) {
@@ -259,7 +268,7 @@
                     <span class="devices"></span>
                 </div>
                 <div class="bio">
-                    <p class="bio-header">Biography</p>
+                    <p class="bio-header">About</p>
                     <span class="bio-text"></span>
                     <p class="sociall-links">
                         <a class="twitter-link" rel="noopener norefferer"><img src="icons/twitter.svg" /></a>
@@ -274,52 +283,59 @@
         (function() {
             'use strict';
 
-            function bindEvents() {
-                [].forEach.call(document.querySelectorAll('.specialist'), function (element, i) {
-                    var clone = element.querySelector('.specialist-description').cloneNode(true);
-
-                    clone.classList.add('cloned');
-
-                    element.querySelector('section').appendChild(clone);
-                    element.addEventListener('click', handleSpecialistClick);
-                });
-            }
-
             function buildList(data) {
                 var template = document.getElementById('specialist-template'),
                     target = document.querySelector('.specia-list');
 
-                data.forEach(function(specialist) {
-                    var clone = 'content' in document.createElement('template') ?
+                data.forEach(function(specialist, index) {
+                    var listItem = 'content' in document.createElement('template') ?
                                     document.importNode(template.content, true) :
-                                    document.querySelector('#specialist-template li').cloneNode(true);
+                                    document.querySelector('#specialist-template li').cloneNode(true),
+                        clone,
+                        linksWrapper = listItem.querySelector('.sociall-links'),
+                        twitterLink = listItem.querySelector('.twitter-link'),
+                        linkedInLink = listItem.querySelector('.li-link');
 
-                    clone.querySelector('.specialist-photo').setAttribute('src', specialist.photoURL)
+                    listItem.querySelector('.specialist-photo').setAttribute('src', specialist.photoURL)
 
-                    clone.querySelector('h1').textContent = specialist.name;
-                    clone.querySelector('address').textContent = specialist.location;
-                    clone.querySelector('.company').textContent = specialist.company;
-                    clone.querySelector('.devices').textContent = specialist.devices;
-                    clone.querySelector('.bio-text').textContent = specialist.bio;
+                    listItem.querySelector('h1').textContent = specialist.name;
+                    listItem.querySelector('address').textContent = specialist.location;
+                    listItem.querySelector('.company').textContent = specialist.company;
+                    listItem.querySelector('.devices').textContent = specialist.devices.join(', ');
+                    listItem.querySelector('.bio-text').textContent = specialist.bio;
 
                     if (specialist.twitterURL) {
-                        clone.querySelector('.twitter-link').setAttribute('href', specialist.twitterURL);
+                        twitterLink.setAttribute('href', specialist.twitterURL);
+                    } else {
+                        twitterLink.parentNode.removeChild(twitterLink);
                     }
 
                     if (specialist.lnURL) {
-                        clone.querySelector('.li-link').setAttribute('href', specialist.lnURL);
+                        linkedInLink.setAttribute('href', specialist.lnURL);
+                    } else {
+                        linkedInLink.parentNode.removeChild(linkedInLink);
                     }
 
-                    target.appendChild(clone);
-                });
+                    if (!linksWrapper.children.length) {
+                        linksWrapper.parentNode.removeChild(linksWrapper);
+                    }
 
-                bindEvents();
+                    clone = listItem.querySelector('.specialist-description').cloneNode(true);
+                    clone.classList.add('cloned');
+
+                    listItem.querySelector('section').appendChild(clone);
+
+                    target.appendChild(listItem);
+                    target.querySelectorAll('.specialist')[index].addEventListener('click', handleSpecialistClick);
+                });
             }
 
             function handleLoad(data) {
-                var specialists = JSON.parse(data.target.response);
+                try {
+                    var specialists = JSON.parse(data.target.response);
 
-                buildList(specialists);
+                    buildList(specialists);
+                } catch (ignore) {}
             }
 
             function handleSpecialistClick(event) {

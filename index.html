@@ -286,6 +286,7 @@
                 <p class="sociall-links">
                     <a class="twitter-link" rel="noopener norefferer"><img src="icons/twitter.svg" /></a>
                     <a class="li-link" rel="noopener norefferer"><img src="icons/ln.png" /></a>
+                    <a class="fb-link" rel="noopener norefferer"><img src="icons/facebook.svg" /></a>
                 </p>
             </section>
         </li>
@@ -306,7 +307,8 @@
                         clone,
                         linksWrapper = listItem.querySelector('.sociall-links'),
                         twitterLink = listItem.querySelector('.twitter-link'),
-                        linkedInLink = listItem.querySelector('.li-link');
+                        linkedInLink = listItem.querySelector('.li-link'),
+                        fbLink = listItem.querySelector('.fb-link');
 
                     listItem.querySelector('.specialist-photo').setAttribute('src', specialist.photoURL)
 
@@ -326,6 +328,12 @@
                         linkedInLink.setAttribute('href', specialist.lnURL);
                     } else {
                         linkedInLink.parentNode.removeChild(linkedInLink);
+                    }
+
+                    if (specialist.facebookURL) {
+                        fbLink.setAttribute('href', specialist.facebookURL);
+                    } else {
+                        fbLink.parentNode.removeChild(linkedInLink);
                     }
 
                     if (!linksWrapper.children.length) {

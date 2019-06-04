@@ -2,22 +2,26 @@
     {
         "name": "1 Name Surname",
         "photoURL": "https://via.placeholder.com/120",
-        "location": "Location, Country",
+        "location": "Korea, Seoul",
         "company": "COMPANY",
-        "devices": [ "DEVICE", "DEVICE" ],
+        "devices": [ "IoT", "H/W" ],
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "lnURL": "https://linked.in",
-        "twitterURL": "https://twitter.com"
+        "twitterURL": "",
+        "facebookURL": "",
+        "emailURL": "test@test.com"
     },
     {
         "name": "2 Name Surname",
         "photoURL": "https://via.placeholder.com/120",
         "location": "Location, Country",
         "company": "COMPANY",
-        "devices": [ "DEVICE", "DEVICE" ],
+        "devices": [ "IoT", "Driver" ],
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "lnURL": "https://linked.in",
-        "twitterURL": "https://twitter.com"
+        "lnURL": "",
+        "twitterURL": "https://twitter.com",
+        "facebookURL": "https://twitter.com",
+        "emailURL": "https://twitter.com"
     },
     {
         "name": "3 Name Surname",
@@ -27,6 +31,8 @@
         "devices": [ "DEVICE", "DEVICE" ],
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "lnURL": "https://linked.in",
-        "twitterURL": "https://twitter.com"
+        "twitterURL": "https://twitter.com",
+        "facebookURL": "https://twitter.com",
+        "emailURL": "https://twitter.com"
     }
 ]

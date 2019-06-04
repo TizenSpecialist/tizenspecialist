@@ -287,6 +287,7 @@
                     <a class="twitter-link" rel="noopener norefferer"><img src="icons/twitter.svg" /></a>
                     <a class="li-link" rel="noopener norefferer"><img src="icons/ln.png" /></a>
                     <a class="fb-link" rel="noopener norefferer"><img src="icons/facebook.svg" /></a>
+                    <a class="email-link" rel="noopener norefferer"><img src="icons/mail.svg" /></a>
                 </p>
             </section>
         </li>
@@ -308,7 +309,8 @@
                         linksWrapper = listItem.querySelector('.sociall-links'),
                         twitterLink = listItem.querySelector('.twitter-link'),
                         linkedInLink = listItem.querySelector('.li-link'),
-                        fbLink = listItem.querySelector('.fb-link');
+                        fbLink = listItem.querySelector('.fb-link'),
+                        emailLink = listItem.querySelector('.email-link');
 
                     listItem.querySelector('.specialist-photo').setAttribute('src', specialist.photoURL)
 
@@ -334,6 +336,12 @@
                         fbLink.setAttribute('href', specialist.facebookURL);
                     } else {
                         fbLink.parentNode.removeChild(linkedInLink);
+                    }
+
+                    if (specialist.emailURL) {
+                        emailLink.setAttribute('href', 'mailto:' + specialist.emailURL);
+                    } else {
+                        emailLink.parentNode.removeChild(linkedInLink);
                     }
 
                     if (!linksWrapper.children.length) {

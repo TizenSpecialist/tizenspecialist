@@ -24,12 +24,16 @@
         "emailURL": "https://twitter.com"
     },
     {
-        "name": "Jinseok Bang",
+        "name": "Jinseog Bang",
         "photoURL": "https://via.placeholder.com/120",
-        "location": "Location, Country",
-        "company": "COMPANY",
-        "devices": [ "DEVICE", "DEVICE" ],
-        "bio": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "location": "Korea, Seoul",
+        "company": "G.Camp",
+        "devices": [ "IoT", "H/W" ],
+        "bio": "JinseogBang 는 IoT 복합 Sensor 의 data 축소 통신에 관심을 가지고 있다. 
+	             이전 직장 에서 복합 sensor hardware project 를 진행 했으며 
+                 zigbee 와 ble 를 이용한 Sensor data 수집을 위한 hardware 제작
+                 경험이 있다. 현재 make space 에서 Hardware start-up 엑셀러레이팅 
+                 컨설팅 업무를 하고 있다.",
         "lnURL": "https://linked.in",
         "twitterURL": "https://twitter.com",
         "facebookURL": "https://twitter.com",

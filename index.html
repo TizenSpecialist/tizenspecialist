@@ -357,11 +357,9 @@
             }
 
             function handleLoad(data) {
-                try {
-                    var specialists = JSON.parse(data.target.response);
+                var specialists = JSON.parse(data.target.response);
 
-                    buildList(specialists);
-                } catch (ignore) {}
+                buildList(specialists);                
             }
 
             function handleSpecialistClick(event) {

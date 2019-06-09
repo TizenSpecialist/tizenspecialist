@@ -29,12 +29,7 @@
         "location": "Korea, Seoul",
         "company": "G.Camp",
         "devices": [ "IoT", "H/W" ],
-        "bio": "Jinseok Bang 는 IoT 복합 Sensor 의 data 축소 통신에 관심을 가지고 있다. \
-	            이전 직장 에서 복합 sensor hardware project 를 진행 했으며 \
-                zigbee 와 ble 를 이용한 Sensor data 수집을 위한 hardware 제작 \
-                경험이 있다. \
-                현재 make space 에서 Hardware start-up 엑셀러레이팅 컨설팅 업무를 \
-                하고 있다.",
+        "bio": "Jinseok Bang \uB294 IoT \uBCF5\uD569 Sensor \uC758 data \uCD95\uC18C \uD1B5\uC2E0\uC5D0 \uAD00\uC2EC\uC744 \uAC00\uC9C0\uACE0 \uC788\uB2E4. \t            \uC774\uC804 \uC9C1\uC7A5 \uC5D0\uC11C \uBCF5\uD569 sensor hardware project \uB97C \uC9C4\uD589 \uD588\uC73C\uBA70 zigbee \uC640 ble \uB97C \uC774\uC6A9\uD55C Sensor data \uC218\uC9D1\uC744 \uC704\uD55C hardware \uC81C\uC791 \uACBD\uD5D8\uC774 \uC788\uB2E4. \uD604\uC7AC make space \uC5D0\uC11C Hardware start-up \uC5D1\uC140\uB7EC\uB808\uC774\uD305 \uCEE8\uC124\uD305 \uC5C5\uBB34\uB97C \uD558\uACE0 \uC788\uB2E4",
         "lnURL": "https://linked.in",
         "twitterURL": "https://twitter.com",
         "facebookURL": "https://twitter.com",

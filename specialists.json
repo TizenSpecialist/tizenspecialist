@@ -12,12 +12,12 @@
         "emailURL": "test@test.com"
     },
     {
-        "name": "Johnny",
+        "name": "Johnny Nam",
         "photoURL": "https://via.placeholder.com/120",
-        "location": "Location, Country",
-        "company": "COMPANY",
+        "location": "Suwon City, Korea",
+        "company": "Dignsys",
         "devices": [ "IoT", "Driver" ],
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "bio": "I participated in Tizen 4.0 Driver porting task for Wlan/BT/Codec and iot devices development project performed various Scenario Based. And i joined network audio project controlled by voice using Amazon Alexa and network door lock project that can check remotely visitor identification and door lock control under Amazon Cloud platform. In addition to the progress of those projects, I uploaded the process and content of the result to the Craftroom Article and Youtube.",
         "lnURL": "",
         "twitterURL": "https://twitter.com",
         "facebookURL": "https://twitter.com",

@@ -333,13 +333,13 @@
                     if (specialist.facebookURL) {
                         fbLink.setAttribute('href', specialist.facebookURL);
                     } else {
-                        fbLink.parentNode.removeChild(linkedInLink);
+                        fbLink.parentNode.removeChild(fbLink);
                     }
 
                     if (specialist.emailURL) {
                         emailLink.setAttribute('href', 'mailto:' + specialist.emailURL);
                     } else {
-                        emailLink.parentNode.removeChild(linkedInLink);
+                        emailLink.parentNode.removeChild(emailLink);
                     }
 
                     if (!linksWrapper.children.length) {

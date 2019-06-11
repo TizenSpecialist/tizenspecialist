@@ -2,14 +2,14 @@
     {
         "name": "Hyobok Ahn",
         "photoURL": "https://via.placeholder.com/120",
-        "location": "Korea, Seoul",
-        "company": "COMPANY",
-        "devices": [ "IoT", "H/W" ],
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "lnURL": "https://linked.in",
+        "location": "Korea, Suwon",
+        "company": "DIGNSYS Inc.",
+        "devices": [ "IoT", "H/W", "S/W" ],
+        "bio": "I'm specialized on Tizen & Tizen RT porting to custom board hardware, I have experience to support design IoT gateway and sensor device with public Cloud such as Samsung SmartThings, AWS.",
+        "lnURL": "",
         "twitterURL": "",
         "facebookURL": "",
-        "emailURL": "test@test.com"
+        "emailURL": "hbahn@dignsys.com"
     },
     {
         "name": "Johnny",

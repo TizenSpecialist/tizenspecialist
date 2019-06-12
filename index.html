@@ -30,6 +30,14 @@
 
         h1 {
             font-size: 36px;
+            margin-bottom: 50px;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-weight: normal;
+            line-height: 1.4em;
+            margin-bottom: 5px;
         }
 
         address {
@@ -53,6 +61,12 @@
             display: flex;
             align-items:center;
             justify-content: center;
+            margin: 30px auto;
+        }
+
+        header div {
+            padding: 0 20px;
+
         }
 
         .specia-list {
@@ -247,7 +261,7 @@
         }
 
         .active .bio {
-            top: 175px;
+            top: 165px;
             opacity: 1;
         }
 
@@ -262,7 +276,7 @@
     <header>
         <div>
             <h1>Tizen Specialist</h1>
-       	    <h3>We announce Tizen Specialists who can share their experiences and skills in Tizen development.</h3>
+            <h3>We announce Tizen Specialists who can share their experiences and skills in Tizen development.</h3>
             <h3>Tizen Specialists support developers and companies when technical help is needed.</h3>
         </div>
     </header>
@@ -363,7 +377,7 @@
             function handleLoad(data) {
                 var specialists = JSON.parse(data.target.response);
 
-                buildList(specialists);                
+                buildList(specialists);
             }
 
             function handleSpecialistClick(event) {

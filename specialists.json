@@ -46,5 +46,17 @@
         "twitterURL": "",
         "facebookURL": "",
         "emailURL": "tizenhan@gmail.com"
+    },
+    {
+        "name": "Ki Ho Lee",
+        "photoURL": "https://github.com/lsirikh/tizenspecialist/blob/master/image/kiho_lee.png",
+        "location": "Seoul, Korea",
+        "company": "OPENFINGERS Co.,Ltd",
+        "devices": [ "IoT", "S/W", "H/W" ],
+        "bio": "I have developed Tizen programs. I have a passion for developing IoT devices and programs. I've also enhanced many skills for a developing device from 3D modeling to programming. I can design H/W device and use a few programming language such as C, C++, Java, and Python. I am currently a CEO and a tutor in coding and making education company, Openfingers. ",
+        "lnURL": "www.memaker.co.kr",
+        "twitterURL": "",
+        "facebookURL": "https://www.facebook.com/www.memaker.co.kr/",
+        "emailURL": "openfingers@openfingers.com"
     }
 ]

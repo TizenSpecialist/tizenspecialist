@@ -49,7 +49,7 @@
     },
     {
         "name": "Ki Ho Lee",
-        "photoURL": "",
+        "photoURL": "https://github.com/lsirikh/tizenspecialist/blob/master/image/kiho_lee.png",
         "location": "Seoul, Korea",
         "company": "OPENFINGERS Co.,Ltd",
         "devices": [ "IoT", "S/W", "H/W" ],

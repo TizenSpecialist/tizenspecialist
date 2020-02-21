@@ -1,289 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="tizen" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Tizen Specialists who can share their
+                    experiences and skills in Tizen development." />
     <title>Tizen Specialist</title>
-    <style>
-        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-        html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
-
-        @font-face {
-            font-family: 'Cabin';
-            src: url("css/fonts/cabin-regular.ttf");
-        }
-
-        @font-face {
-            font-family: 'Cabin';
-            src: url("css/fonts/cabin-bold.ttf");
-            font-weight: bold;
-        }
-
-        img::selection {
-            background: transparent;
-        }
-
-        body {
-            background: #fff;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 50px;
-            margin-top: 0;
-        }
-
-        h3 {
-            font-weight: normal;
-            line-height: 1.4em;
-            margin-bottom: 5px;
-        }
-
-        address {
-            font-style: normal;
-            font-size: 14px;
-            color: #676767;
-            margin-bottom: -1px;
-        }
-
-        * {
-            font-family: 'Cabin';
-            box-sizing: border-box;
-        }
-
-        ul, li {list-style: none; padding:0;}
-
-        header {
-            text-align: center;
-            height: 310px;
-            color: #000;
-            display: flex;
-            align-items:center;
-            justify-content: center;
-            margin: 30px auto;
-        }
-
-        header div {
-            padding: 0 20px;
-
-        }
-
-        .specia-list {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-        }
-
-        .specialist {
-            position: relative;
-            background: #f0f0f0;
-            box-shadow: -1px 2px 8px rgba(85, 85, 85, 0.47);
-            text-align: center;
-            padding: 25px;
-            width: 100%;
-            height: 350px;
-            max-width: 370px;
-            margin: 0 0 35px;
-            line-height: 1.25em;
-            overflow: hidden;
-        }
-
-        .specialist:hover {
-            background: #e3f4ff;
-            cursor: pointer;
-        }
-
-        .specialist-description:not(.cloned) {
-            position: relative;
-            right: 0;
-            transition: right .5s ease, opacity .5s ease;
-        }
-
-        .specialist-description.cloned {
-            position: absolute;
-            left: 100%;
-            opacity: 0;
-            top: 10px;
-            width: 160px;
-            transition: left .5s ease, opacity .5s ease;
-        }
-
-        .specialist-description.cloned h1 {
-            margin-bottom: 2px;
-        }
-
-        .specialist h1 {
-            color: #000;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 13px auto 8px;
-        }
-
-        .specialist-photo-wrapper {
-            width: 120px;
-            height: 120px;
-            margin: 0 0 28px;
-            position: relative;
-            left: 50%;
-            transform: translate(-50%);
-            transition: left .5s ease, transform .5s ease;
-        }
-
-        .specialist-photo-wrapper:after {
-            content: url("icons/tizen_logo.svg");
-            display: block;
-            width: 35px;
-            height: 35px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
-
-        .specialist-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .company {
-            display: block;
-            margin-bottom: 10px;
-            color: #676767;
-            font-size: 14px;
-        }
-
-        .devices {
-            display: block;
-            position: relative;
-            padding-top: 15px;
-            width: 100%;
-            font-size: 18px;
-            color: #000;
-        }
-
-        .devices:before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            margin-left: -40px;
-            background-color: #73b2ff;
-            width: 80px;
-            height: 2px;
-        }
-
-        .bio {
-            font-size: 15px;
-            line-height: 18px;
-            text-align: justify;
-            position: absolute;
-            left: 20px;
-            top: 100%;
-            opacity: 0;
-            transition: left .5s ease, top .5s ease, opacity .5s ease;
-            padding-right: 20px;
-        }
-
-        .bio .bio-header {
-            margin-bottom: 10px;
-        }
-
-        .bio p {
-            margin: 0;
-        }
-
-        .sociall-links {
-            margin-top: 25px;
-            display: flex;
-            justify-content: flex-end;
-            position: absolute;
-            width: 100%;
-            bottom: -24px;
-            left: 0;
-            padding: 0 20px;
-            margin: 0;
-            opacity: 0;
-            transition: bottom .5s ease, opacity .5s ease;
-        }
-
-        .sociall-links img {
-            width: 21px;
-            height: 21px;
-            display: block;
-        }
-
-        .sociall-links a {
-            margin-left: 5px;
-        }
-
-        .sociall-links img:hover {
-            transform: translateY(-1px);
-        }
-
-        @media (min-width: 876px) {
-            .specia-list {
-                max-width: 775px;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-            .specialist {
-                width: 370px;
-            }
-        }
-
-        @media (min-width: 1280px) {
-            .specia-list {
-                max-width: 1180px;
-            }
-        }
-
-        .active .specialist-photo-wrapper {
-            left: 0px;
-            transform: translate(0%)
-        }
-
-        .active .specialist-description:not(.cloned) {
-            opacity: 0;
-            right: 50%;
-        }
-
-        .active .specialist-description.cloned {
-            left: 180px;
-            opacity: 1;
-        }
-
-        .active .bio {
-            top: 165px;
-            opacity: 1;
-        }
-
-        .active .sociall-links {
-            bottom: 12px;
-            opacity: 1;
-        }
-
-    </style>
+    <link rel="icon" type="image/png" sizes="456x456" href="/favicon.png">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" async defer></script>
 </head>
+
 <body>
+    <div class="logo"><img src="assets/images/tizen.png" /><span>Specialist</span></div>
     <header>
+        <img src="assets/images/banner-man.svg" />
         <div>
-            <h1>Tizen Specialist</h1>
-            <h3>We announce Tizen Specialists who can share their experiences and skills in Tizen development.</h3>
-            <h3>Tizen Specialists support developers and companies when technical help is needed.</h3>
+            <h1>What is Tizen Specialist?</h1>
+            <h3>
+                We announce Tizen Specialists who can share their
+                experiences and skills in Tizen development.
+            </h3>
+            <h3>
+                Tizen Specialists support developers and companies when
+                technical help is needed.
+            </h3>
         </div>
     </header>
     <main>
-        <ul class="specia-list"></ul>
+        <ul class="specialist-list"></ul>
     </main>
-    <template id="specialist-template">
+    <div class="popup-wrapper">
+        <div class="popup-container">
+            <div id="popup-close-btn"></div>
+            <ul class="specialist-list-popup"></ul>
+            <div class="navigation">
+                <div class="prev">Previous</div>
+                <div class="next">Next</div>
+            </div>
+        </div>
+    </div>
+    <template id="specialist-list-item-template">
         <li class="specialist">
             <section>
                 <div class="specialist-photo-wrapper">
@@ -295,105 +56,60 @@
                     <span class="company"></span>
                     <span class="devices"></span>
                 </div>
-                <div class="bio">
-                    <p class="bio-header">About</p>
-                    <span class="bio-text"></span>
-                </div>
                 <p class="sociall-links">
-                    <a class="twitter-link" rel="noopener norefferer"><img src="icons/twitter.svg" /></a>
-                    <a class="li-link" rel="noopener norefferer"><img src="icons/in.svg" /></a>
-                    <a class="fb-link" rel="noopener norefferer"><img src="icons/facebook.svg" /></a>
-                    <a class="email-link" rel="noopener norefferer"><img src="icons/mail.svg" /></a>
+                    <a class="twitter-link" target="_blank" rel="noopener norefferer"><img
+                            src="assets/icons/twitter.svg" /></a>
+                    <a class="li-link" target="_blank" rel="noopener norefferer"><img
+                            src="assets/icons/linkedin.svg" /></a>
+                    <a class="fb-link" target="_blank" rel="noopener norefferer"><img
+                            src="assets/icons/facebook.svg" /></a>
+                    <a class="email-link" target="_blank" rel="noopener norefferer"><img
+                            src="assets/icons/email.svg" /></a>
                 </p>
             </section>
         </li>
     </template>
+    <template id="specialist-popup-item-template">
+        <li class="specialist">
+            <section>
+                <div class="specialist-photo-wrapper">
+                    <img class="specialist-photo" />
+                </div>
+                <div class="specialist-description">
+                    <h1></h1>
+                    <address></address>
+                    <span class="company"></span>
+                    <div class="devices-sociall-wrapper">
+                        <span class="devices"></span>
+                        <p class="sociall-links">
+                            <a class="twitter-link" target="_blank" rel="noopener norefferer"><img
+                                    src="assets/icons/twitter.svg" /></a>
+                            <a class="li-link" target="_blank" rel="noopener norefferer"><img
+                                    src="assets/icons/linkedin.svg" /></a>
+                            <a class="fb-link" target="_blank" rel="noopener norefferer"><img
+                                    src="assets/icons/facebook.svg" /></a>
+                            <a class="email-link" target="_blank" rel="noopener norefferer"><img
+                                    src="assets/icons/email.svg" /></a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="bio">
+                <p class="bio-header">About</p>
+                <span class="bio-text"></span>
+            </div>
+        </li>
+    </template>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-19369352-24"></script>
     <script>
-        (function() {
-            'use strict';
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-            function buildList(data) {
-                var template = document.getElementById('specialist-template'),
-                    target = document.querySelector('.specia-list');
-
-                data.forEach(function(specialist, index) {
-                    var listItem = 'content' in document.createElement('template') ?
-                                    document.importNode(template.content, true) :
-                                    document.querySelector('#specialist-template li').cloneNode(true),
-                        clone,
-                        linksWrapper = listItem.querySelector('.sociall-links'),
-                        twitterLink = listItem.querySelector('.twitter-link'),
-                        linkedInLink = listItem.querySelector('.li-link'),
-                        fbLink = listItem.querySelector('.fb-link'),
-                        emailLink = listItem.querySelector('.email-link');
-
-                    listItem.querySelector('.specialist-photo').setAttribute('src', specialist.photoURL)
-
-                    listItem.querySelector('h1').textContent = specialist.name;
-                    listItem.querySelector('address').textContent = specialist.location;
-                    listItem.querySelector('.company').textContent = specialist.company;
-                    listItem.querySelector('.devices').textContent = specialist.devices.join(', ');
-                    listItem.querySelector('.bio-text').textContent = specialist.bio;
-
-                    if (specialist.twitterURL) {
-                        twitterLink.setAttribute('href', specialist.twitterURL);
-                    } else {
-                        twitterLink.parentNode.removeChild(twitterLink);
-                    }
-
-                    if (specialist.lnURL) {
-                        linkedInLink.setAttribute('href', specialist.lnURL);
-                    } else {
-                        linkedInLink.parentNode.removeChild(linkedInLink);
-                    }
-
-                    if (specialist.facebookURL) {
-                        fbLink.setAttribute('href', specialist.facebookURL);
-                    } else {
-                        fbLink.parentNode.removeChild(fbLink);
-                    }
-
-                    if (specialist.emailURL) {
-                        emailLink.setAttribute('href', 'mailto:' + specialist.emailURL);
-                    } else {
-                        emailLink.parentNode.removeChild(emailLink);
-                    }
-
-                    if (!linksWrapper.children.length) {
-                        linksWrapper.parentNode.removeChild(linksWrapper);
-                    }
-
-                    clone = listItem.querySelector('.specialist-description').cloneNode(true);
-                    clone.classList.add('cloned');
-
-                    listItem.querySelector('section').appendChild(clone);
-
-                    target.appendChild(listItem);
-                    target.querySelectorAll('.specialist')[index].addEventListener('click', handleSpecialistClick);
-                });
-            }
-
-            function handleLoad(data) {
-                var specialists = JSON.parse(data.target.response);
-
-                buildList(specialists);
-            }
-
-            function handleSpecialistClick(event) {
-                this.classList.toggle('active');
-            }
-
-            function init() {
-                var client = new XMLHttpRequest();
-
-                client.onload = handleLoad;
-                client.open('GET', 'specialists.json');
-                client.send(null);
-            }
-
-            window.addEventListener('load', init);
-        }());
+        gtag('config', 'UA-19369352-24');
     </script>
 </body>
+
 </html>

@@ -382,6 +382,7 @@ header img {
 .sociall-links {
     margin-top: 25px;
     display: flex;
+    justify-content: center;
     margin: 0;
     transition: bottom 0.5s ease, opacity 0.5s ease;
 }
@@ -473,8 +474,7 @@ header img {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    background: #3d57a6;
-    -webkit-mask: url('../assets/icons/close.svg') center / cover no-repeat;
+    background: url('../assets/icons/close.svg') center / cover no-repeat;
 }
 
 .devices-sociall-wrapper {

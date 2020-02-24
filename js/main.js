@@ -21,11 +21,7 @@
             var listItem =
                     'content' in document.createElement('template')
                         ? document.importNode(listItemTemplate.content, true)
-                        : document
-                              .querySelector(
-                                  '#specialist-list-item-template li'
-                              )
-                              .cloneNode(true),
+                        : template.firstElementChild.cloneNode(true),
                 linksWrapper = listItem.querySelector('.sociall-links'),
                 twitterLink = listItem.querySelector('.twitter-link'),
                 linkedInLink = listItem.querySelector('.li-link'),
@@ -103,10 +99,9 @@
         }
 
         showPopup(index);
-        popupListElement.scroll(
-            index * popupListElement.getClientRects()[0].width,
-            0
-        );
+
+        popupListElement.scrollLeft =
+            index * popupListElement.getClientRects()[0].width;
     }
 
     function handleLoad(data) {
@@ -147,17 +142,28 @@
         }, 100);
     }
 
+    function scrollX(elem, x) {
+        if (elem.scroll) {
+            elem.scroll({
+                left: x,
+                behavior: 'smooth',
+            });
+        } else {
+            elem.scrollLeft = x;
+        }
+    }
+
     function onPrevClick() {
         if (scrollLock) return;
 
-        popupListElement.scroll({
-            left: Math.max(
+        scrollX(
+            popupListElement,
+            Math.max(
                 0,
                 popupListElement.scrollLeft -
                     popupListElement.getClientRects()[0].width
-            ),
-            behavior: 'smooth',
-        });
+            )
+        );
 
         lockForScrolling();
     }
@@ -165,15 +171,16 @@
     function onNextClick() {
         if (scrollLock) return;
 
-        popupListElement.scroll({
-            left: Math.min(
+
+        scrollX(
+            popupListElement,
+            Math.min(
                 popupListElement.firstElementChild.getClientRects()[0].width *
                     popupListElement.childElementCount,
                 popupListElement.scrollLeft +
                     popupListElement.getClientRects()[0].width
-            ),
-            behavior: 'smooth',
-        });
+            )
+        );
 
         lockForScrolling();
     }

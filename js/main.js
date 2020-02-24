@@ -99,6 +99,7 @@
         }
 
         showPopup(index);
+
         popupListElement.scrollLeft =
             index * popupListElement.getClientRects()[0].width;
     }
@@ -169,6 +170,7 @@
 
     function onNextClick() {
         if (scrollLock) return;
+
 
         scrollX(
             popupListElement,

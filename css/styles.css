@@ -170,30 +170,83 @@ html {
     font-weight: 800;
 }
 
+.navbar-wrapper {
+    margin-top: 0;
+    position: relative;
+    height: 82px;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 82px;
+    background: #fff;
+    z-index: 1;
+}
+
+.navbar-wrapper img {
+    vertical-align: middle;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 15px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+}
+
+.navbar a.navbar-brand {
+    color: #777;
+    font-weight: 800;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.navbar a.navbar-brand .brand-docs {
+    font-size: 16px;
+    margin-left: 7px;
+    color: #141418;
+    font-weight: 800;
+    text-transform: none;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+    height: 82px;
+}
+
 img::selection {
     background: transparent;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo {
     display: flex;
-    max-width: 1412px;
     margin: auto;
     align-items: center;
     height: 60px;
     padding: 0 20px;
     font-size: 18px;
 }
-
-.logo img,
-.logo span {
-    display: block;
-    height: 20px;
-    margin-right: 9px;
-    font-weight: 600;
+.logo img {
+    vertical-align: middle;
 }
 
 .logo span {
-    margin-top: 2px;
+    font-size: 16px;
+    color: #141418;
+    font-weight: 600;
+    text-transform: none;
 }
 
 body {
@@ -203,8 +256,9 @@ body {
 }
 
 header h1 {
-    font-size: 24px;
-    line-height: 30px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1em;
     margin-bottom: 16px;
     margin-top: 0;
     color: #fff;
@@ -212,11 +266,11 @@ header h1 {
 }
 
 header h3 {
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 26px;
     margin-bottom: 5px;
     color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 address {
@@ -427,6 +481,7 @@ header img {
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .popup-wrapper.opened {
@@ -519,6 +574,11 @@ header img {
 }
 
 @media only screen and (min-width: 1024px) {
+    .navbar-wrapper .navbar .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
     .specialist-list {
         width: 940px;
         justify-content: space-between;
@@ -526,7 +586,6 @@ header img {
 
     header div {
         max-width: 1412px;
-        padding-left: 120px;
         width: 650px;
         margin: 0;
     }
@@ -651,19 +710,13 @@ header img {
     }
 
     .logo {
-        height: 104px;
+        height: 82px;
         font-size: 32px;
-        line-height: 39px;
+        line-height: 20px;
     }
 
-    .logo img,
-    .logo span {
-        height: 37px;
-        margin-right: 15px;
-    }
-
-    .logo span {
-        margin-top: 4px;
+    .logo img {
+        margin-left: 10px;
     }
 
     .navigation {
@@ -672,18 +725,21 @@ header img {
     }
 
     header {
-        background: url('../assets/images/banner-desktop.svg') 50% 50% / cover
+        background: url('../assets/images/banner-desk-bg.svg') 50% 50% / cover
             no-repeat;
-        height: 446px;
+        height: 418px;
         margin-bottom: 60px;
+        flex-direction: row-reverse;
+        align-content: center;
+        justify-content: center;
     }
 
     header img {
-        display: none;
+        margin: 0;
+        align-self:initial;
     }
 
     header div {
-        width: 1412px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -701,8 +757,8 @@ header img {
     }
 
     header h3 {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 24px;
         margin: 0;
     }
 }

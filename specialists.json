@@ -1,7 +1,7 @@
 [
     {
         "name": "Hyobok Ahn",
-        "photoURL": "/image/hbahn.png",
+        "photoURL": "image/hbahn.png",
         "location": "Suwon, Korea",
         "company": "DIGNSYS Inc.",
         "devices": ["IoT", "H/W", "S/W"],
@@ -13,7 +13,7 @@
     },
     {
         "name": "Johnny Nam",
-        "photoURL": "/image/johnnynam.png",
+        "photoURL": "image/johnnynam.png",
         "location": "Suwon, Korea",
         "company": "DIGNSYS Inc.",
         "devices": ["IoT", "Driver"],
@@ -25,7 +25,7 @@
     },
     {
         "name": "Jinseog Bang",
-        "photoURL": "/image/Scan_20140517_201809.jpg",
+        "photoURL": "image/Scan_20140517_201809.jpg",
         "location": "Seoul, Korea",
         "company": "G.Camp",
         "devices": ["IoT", "H/W"],
@@ -37,7 +37,7 @@
     },
     {
         "name": "Min Su Han",
-        "photoURL": "/image/minsuhan.jpg",
+        "photoURL": "image/minsuhan.jpg",
         "location": "Seoul, Korea",
         "company": "SINO TECH Co.,Ltd",
         "devices": ["IoT", "S/W"],
@@ -49,7 +49,7 @@
     },
     {
         "name": "Ki Ho Lee",
-        "photoURL": "/image/kiho_lee.png",
+        "photoURL": "image/kiho_lee.png",
         "location": "Seoul, Korea",
         "company": "OPENFINGERS Co.,Ltd",
         "devices": ["IoT", "S/W", "H/W"],
@@ -61,7 +61,7 @@
     },
     {
         "name": "Jeong-uk Kwak",
-        "photoURL": "/image/jeonguk_kwak.jpg",
+        "photoURL": "image/jeonguk_kwak.jpg",
         "location": "Korea, Seoul",
         "company": "TecAce Solutions, Inc.",
         "devices": ["IoT", "S/W"],

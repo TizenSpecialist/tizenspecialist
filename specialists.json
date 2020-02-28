@@ -1,7 +1,7 @@
 [
     {
         "name": "Hyobok Ahn",
-        "photoURL": "https://tizenspecialist.github.io/tizenspecialist/image/hbahn.png",
+        "photoURL": "/image/hbahn.png",
         "location": "Suwon, Korea",
         "company": "DIGNSYS Inc.",
         "devices": ["IoT", "H/W", "S/W"],
@@ -13,7 +13,7 @@
     },
     {
         "name": "Johnny Nam",
-        "photoURL": "https://tizenspecialist.github.io/tizenspecialist/image/johnnynam.png",
+        "photoURL": "/image/johnnynam.png",
         "location": "Suwon, Korea",
         "company": "DIGNSYS Inc.",
         "devices": ["IoT", "Driver"],
@@ -25,7 +25,7 @@
     },
     {
         "name": "Jinseog Bang",
-        "photoURL": "https://tizenspecialist.github.io/tizenspecialist/image/Scan_20140517_201809.jpg",
+        "photoURL": "/image/Scan_20140517_201809.jpg",
         "location": "Seoul, Korea",
         "company": "G.Camp",
         "devices": ["IoT", "H/W"],
@@ -37,7 +37,7 @@
     },
     {
         "name": "Min Su Han",
-        "photoURL": "https://tizenspecialist.github.io/tizenspecialist/image/minsuhan.jpg",
+        "photoURL": "/image/minsuhan.jpg",
         "location": "Seoul, Korea",
         "company": "SINO TECH Co.,Ltd",
         "devices": ["IoT", "S/W"],
@@ -49,11 +49,11 @@
     },
     {
         "name": "Ki Ho Lee",
-        "photoURL": "https://tizenspecialist.github.io/tizenspecialist/image/kiho_lee.png",
+        "photoURL": "/image/kiho_lee.png",
         "location": "Seoul, Korea",
         "company": "OPENFINGERS Co.,Ltd",
         "devices": ["IoT", "S/W", "H/W"],
-        "bio": "I have developed Tizen programs. And there is a passion for developing IoT devices and programs. I have also improved many techniques for developing IoT device, from 3D modeling to programming. I can design hardware devices and use some programming languages like C, C ++, Java and Python. I am currently the CEO and tutor of Openfingers, a coding education company.",  
+        "bio": "I have developed Tizen programs. And there is a passion for developing IoT devices and programs. I have also improved many techniques for developing IoT device, from 3D modeling to programming. I can design hardware devices and use some programming languages like C, C ++, Java and Python. I am currently the CEO and tutor of Openfingers, a coding education company.",
         "lnURL": "https://www.memaker.co.kr",
         "twitterURL": "",
         "facebookURL": "https://www.facebook.com/www.memaker.co.kr/",
@@ -61,10 +61,10 @@
     },
     {
         "name": "Jeong-uk Kwak",
-        "photoURL": "https://tizenspecialist.github.io/tizenspecialist/image/jeonguk_kwak.jpg",
+        "photoURL": "/image/jeonguk_kwak.jpg",
         "location": "Korea, Seoul",
         "company": "TecAce Solutions, Inc.",
-        "devices": [ "IoT", "S/W" ],
+        "devices": ["IoT", "S/W"],
         "bio": "I have developed Tizen native applications for the Samsung Family Hub and various consumer electronics. I'm currently focusing on Tizen .NET application development and hope to create a more convenient world with Tizen.",
         "lnURL": "",
         "twitterURL": "",

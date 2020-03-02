@@ -171,6 +171,7 @@
     function onNextClick() {
         if (scrollLock) return;
 
+
         scrollX(
             popupListElement,
             Math.min(
@@ -207,6 +208,7 @@
                 event.target.tagName === 'A' ||
                 event.target.parentElement.tagName === 'A'
             ) {
+                console.log(event.target.tagName);
                 event.stopPropagation();
             }
         });

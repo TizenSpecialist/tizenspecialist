@@ -70,5 +70,17 @@
         "twitterURL": "",
         "facebookURL": "https://www.facebook.com/TecAce-174962299233589/",
         "emailURL": "tecace@tecace.com"
+    },
+    {
+        "name": "Hae-Yeon Hwang",
+        "photoURL": "https://drive.google.com/file/d/1DBZjczsLbcMN4w38QugOlYnU7I1mQAS-/view?usp=sharing",
+        "location": "Seoul, Korea",
+        "company": "WB9Lab",
+        "devices": ["IoT", "S/W"],
+        "bio": "Passionate IT engineer and technical executive director with 24+ year of experience and a proven track record in software and hardware development",
+        "lnURL": "https://www.linkedin.com/in/haeyeon-hwang-00593222/",
+        "twitterURL": "https://twitter.com/pushdown99",
+        "facebookURL": "https://www.facebook.com/pushdown99",
+        "emailURL": "haeyun@gmail.com"
     }
 ]

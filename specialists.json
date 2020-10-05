@@ -82,5 +82,17 @@
         "twitterURL": "https://twitter.com/pushdown99",
         "facebookURL": "https://www.facebook.com/pushdown99",
         "emailURL": "haeyun@gmail.com"
+    },
+    {
+        "name": "Jeong Seongmoon",
+        "photoURL": "image/tizen_specialist_msaltnet.PNG",
+        "location": "Seoul, Korea",
+        "company": "Samsung Electronics",
+        "devices": ["IoT", "Wearable"],
+        "bio": "Hello. I'm Jeong Seongmoon a.k.a. msalt, a Korean S/W programmer. I love to create a funny toy project and a Tizen application for real world users. I hope many people will enjoy using and developing Tizen. http://me.msalt.net",
+        "lnURL": "",
+        "twitterURL": "https://twitter.com/delisalt",
+        "facebookURL": "https://www.facebook.com/msalt.net",
+        "emailURL": "theo@msalt.net"
     }
 ]

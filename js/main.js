@@ -107,6 +107,10 @@
     function handleLoad(data) {
         var specialists = JSON.parse(data.target.response);
 
+        specialists.sort(function() {
+            return .5 - Math.random()
+        });
+
         buildList(
             specialists,
             document.getElementById('specialist-list-item-template'),

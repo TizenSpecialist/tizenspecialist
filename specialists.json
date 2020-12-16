@@ -84,15 +84,15 @@
         "emailURL": "haeyun@gmail.com"
     },
     {
-        "name": "Jeong Seongmoon",
-        "photoURL": "image/tizen_specialist_msaltnet.PNG",
+        "name": "JungMin O",
+        "photoURL": "image/JungMinO.jpg",
         "location": "Seoul, Korea",
         "company": "",
-        "devices": ["IoT", "Wearable"],
-        "bio": "Hello. I'm Jeong Seongmoon a.k.a. msalt, a Korean S/W programmer. I love to create a funny toy project and a Tizen application for real world users. I hope many people will enjoy using and developing Tizen. http://me.msalt.net",
-        "lnURL": "",
-        "twitterURL": "https://twitter.com/delisalt",
-        "facebookURL": "https://www.facebook.com/msalt.net",
-        "emailURL": "theo@msalt.net"
+        "devices": ["IoT", "Web", "Server"],
+        "bio": "I like to have multiple skill stacks and create new ones. I have experience developing firmware in software Maesrto. I have been able to contribute to Tizen through my experience in firmware development.",
+        "lnURL": "https://www.linkedin.com/in/%EC%A0%95%EB%AF%BC-%EC%98%A4-784b8b185/",
+        "twitterURL": "",
+        "facebookURL": "https://www.facebook.com/profile.php?id=100008314996736",
+        "emailURL": "owjs3901@gmail.com"
     }
 ]

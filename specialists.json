@@ -94,5 +94,17 @@
         "twitterURL": "https://twitter.com/delisalt",
         "facebookURL": "https://www.facebook.com/msalt.net",
         "emailURL": "theo@msalt.net"
+    },
+        {
+        "name": "Heeyeon KIM",
+        "photoURL": "image/HeeyeonKIM.PNG",
+        "location": "Seoul, Korea",
+        "company": "",
+        "devices": ["IoT", "S/W"],
+        "bio": "I'm interested in IoT projects made with Tizen. I have developed an automatic hand sanitizer module called 'Noormi'. Also, I'm interested in several different things such as big data, machine learning, and A.I. So, I'm going to accumulate a variety of development experience.",
+        "lnURL": "",
+        "twitterURL": "",
+        "facebookURL": "",
+        "emailURL": "heeyeon991221@gmail.com"
     }
 ]

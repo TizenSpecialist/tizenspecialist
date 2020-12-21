@@ -95,16 +95,29 @@
         "facebookURL": "https://www.facebook.com/msalt.net",
         "emailURL": "theo@msalt.net"
     },
+
     {
         "name": "JungMin O",
         "photoURL": "image/JungMinO.jpg",
         "location": "Seoul, Korea",
         "company": "",
         "devices": ["IoT", "Web", "Server"],
-        "bio": "여러 기술을 융합하여 새로운 가치를 찾고 구현하는 것을 즐깁니다. 펌웨어 개발부터 서버, 클라이언트까지 여러 분야와 언어를 다룰 수 있습니다. 이런 경험들은 타이젠 앱 개발에 초석이 되었으며 타이젠을 통해 사용자에게 새로운 경험을 선사할 수 있는 기회를 얻게 되었습니다.",
+        "bio": "I enjoy exploring new values by combining techologies. I have the ability to develop in multiple fields, such as firmware, server and client. The experiences I had gained became the basis for developing Tizen apps, and I got the chance to present new experiences to users with Tizen.",
         "lnURL": "https://www.linkedin.com/in/%EC%A0%95%EB%AF%BC-%EC%98%A4-784b8b185/",
         "twitterURL": "",
         "facebookURL": "https://www.facebook.com/profile.php?id=100008314996736",
         "emailURL": "owjs3901@gmail.com"
+    },
+    {
+        "name": "Heeyeon KIM",
+        "photoURL": "image/HeeyeonKIM.JPG",
+        "location": "Seoul, Korea",
+        "company": "",
+        "devices": ["IoT", "S/W"],
+        "bio": "I'm interested in IoT projects made with Tizen. I have developed an automatic hand sanitizer module called 'Noormi'. Also, I'm interested in several different things such as big data, machine learning, and A.I. So, I'm going to accumulate a variety of development experience.",
+        "lnURL": "",
+        "twitterURL": "",
+        "facebookURL": "",
+        "emailURL": "heeyeon991221@gmail.com"
     }
 ]

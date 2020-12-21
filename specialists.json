@@ -95,7 +95,20 @@
         "facebookURL": "https://www.facebook.com/msalt.net",
         "emailURL": "theo@msalt.net"
     },
-        {
+
+    {
+        "name": "JungMin O",
+        "photoURL": "image/JungMinO.jpg",
+        "location": "Seoul, Korea",
+        "company": "",
+        "devices": ["IoT", "Web", "Server"],
+        "bio": "I enjoy exploring new values by combining techologies. I have the ability to develop in multiple fields, such as firmware, server and client. The experiences I had gained became the basis for developing Tizen apps, and I got the chance to present new experiences to users with Tizen.",
+        "lnURL": "https://www.linkedin.com/in/%EC%A0%95%EB%AF%BC-%EC%98%A4-784b8b185/",
+        "twitterURL": "",
+        "facebookURL": "https://www.facebook.com/profile.php?id=100008314996736",
+        "emailURL": "owjs3901@gmail.com"
+    },
+    {
         "name": "Heeyeon KIM",
         "photoURL": "image/HeeyeonKIM.JPG",
         "location": "Seoul, Korea",

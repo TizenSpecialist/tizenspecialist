@@ -95,7 +95,6 @@
         "facebookURL": "https://www.facebook.com/msalt.net",
         "emailURL": "theo@msalt.net"
     },
-
     {
         "name": "JungMin O",
         "photoURL": "image/JungMinO.jpg",
@@ -119,5 +118,17 @@
         "twitterURL": "",
         "facebookURL": "",
         "emailURL": "heeyeon991221@gmail.com"
-    }
+    },
+    {
+        "name": "Jayden Jaehun Choe",
+        "photoURL": "image/jayden_jaehun_choe.jpg",
+        "location": "Seoul, Korea",
+        "company": "Sungkyunkwan University",
+        "devices": ["IoT", "Automotive", "Machine Learning"],
+        "bio": "Experienced Software Engineer in Embedded, IoT, Automotive and Machine Learning areas. Tizen/NUI is one of the most brilliant embedded software development tools.",
+        "lnURL": "",
+        "twitterURL": "",
+        "facebookURL": "https://www.facebook.com/jayden.choe",
+        "emailURL": "jayden.choe@gmail.com"
+    }    
 ]
